@@ -13,7 +13,7 @@
  * NOTE: This example has been completed for you.
 */
 function addNumbers(num1, num2) {
-  return num1 + num2;
+  return num1+num2;
 }
 
 // ⭐️ Example Challenge end ⭐️
