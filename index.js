@@ -77,9 +77,15 @@ console.log(getName('Leia'))
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson(/* code here */) {
-  /* code here */
-}
+function makeSmartPerson (name) {
+    return { name: name,
+            sum: function (num1,num2){
+                return num1+num2},
+            speak: function (){
+                return `Hello, my name is ${name}`;
+            }
+} 
+}  
 
 
 
