@@ -78,7 +78,8 @@ console.log(getName('Leia'))
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
 function makeSmartPerson (name) {
-    return { name: name,
+    return { 
+            name: name,
             sum: function (num1,num2){
                 return num1+num2},
             speak: function (){
@@ -129,9 +130,6 @@ function get3rdCar(inventory) {
 }
 
 // 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
-
 
 /**
  * ### Challenge `getCarInfoByIndex`
@@ -145,8 +143,11 @@ function get3rdCar(inventory) {
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoByIndex(inventory, index) {
-  /* code here */
+function getCarInfoByIndex(inventory) {
+  const the1st = inventory.find((item, index) => {
+    return index === 0
+  })
+    return `This is a ${the1st.car_make} ${the1st.car_model}`
 }
 
 /**
