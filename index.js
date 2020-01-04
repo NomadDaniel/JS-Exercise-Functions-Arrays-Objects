@@ -240,7 +240,7 @@ function getGermanCars(inventory) {
  * @instructions
  * Create arrow function versions of the following commented-out functions:
  * 
- * const sum = afunction (a, b) {
+ * const sum = function (a, b) {
  *   return a + b
  * }
  * 
@@ -269,8 +269,14 @@ const argTimesTwo = (num) => num * 2;
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
 */
-function carMaker(/* code here */) {
-  /* code here */
+function carMaker(num) {
+  let car = {
+      odometer: num,
+      drive: function (distance) {
+          return this.odometer += distance;
+      }
+  }
+return car;
 }
 
 /// ////// END OF CHALLENGE /////////
