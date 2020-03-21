@@ -263,7 +263,22 @@ return olderCar;
 */
 function getGermanCars(inventory) {
   
+  const germanCars = []
+  
+    for (let i=0; i<inventory.length; i++) {
+
+      if (inventory[i].car_make === "Audi" || 
+      inventory[i].car_make === "Mercedes-Benz" ||
+      inventory[i].car_make === "Volkswagen" ||
+      inventory[i].car_make === "BMW") {
+
+        germanCars.push(inventory[i])
+      
+      }
+    }
+  return germanCars;
 }
+
 
 /**
  * ### Challenge refactor to arrow functions
